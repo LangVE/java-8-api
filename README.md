@@ -1,9 +1,9 @@
-# Java 8 API 학습
+# Java 8 API 스터디
 
-## 스터디 요약
+## [스터디 요약](https://github.com/LangVE/java-8-api/wiki/%EC%8A%A4%ED%84%B0%EB%94%94-%EC%A0%95%EB%B3%B4)
 Java 8 API에 포함된 lambda expression 에 대한 궁금증에서 모임을 시작합니다.
 
-## 기능 요약
+## Java 8 API summarizes features and enhancements
 - Java Programming Language
 - Collections
 - Compact Profiles contain predefined subsets of the Java SE platform and enable applications that do not require the entire Platform to be deployed and run on small devices.
@@ -27,4 +27,3 @@ Java 8 API에 포함된 lambda expression 에 대한 궁금증에서 모임을 �
 
 ## 참고
 * http://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html
-* https://www.slideshare.net/gyumee/java-8-lambda-35352385
