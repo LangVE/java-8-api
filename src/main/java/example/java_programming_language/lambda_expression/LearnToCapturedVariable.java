@@ -3,7 +3,7 @@ package example.java_programming_language.lambda_expression;
 /**
  * Created by 이영호 on 2017-03-30.
  */
-public class CapturedVariable {
+public class LearnToCapturedVariable {
     public static void main(String[] args){
 
         String how = "hard";
