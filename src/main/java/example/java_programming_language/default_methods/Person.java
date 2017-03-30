@@ -11,6 +11,6 @@ public interface Person {
     }
 
     default void sleep() {
-        System.out.printf("I want to sleep");
+        System.out.printf("I want to sleep.");
     }
 }
