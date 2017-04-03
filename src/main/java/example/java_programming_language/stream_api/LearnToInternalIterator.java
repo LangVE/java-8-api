@@ -61,9 +61,10 @@ public class LearnToInternalIterator implements Measurable{
 
     @Override
     public void execute() {
-        List<Integer> list = init(10000000);
+        List<Integer> list = init(100000);
 
-        list.stream().filter(integer -> integer % 2 == 0);
+        list.stream().filter(integer -> integer % 2 == 0)
+            .forEach((n) -> System.out.println( "Theard name(" + n + ") : " + Thread.currentThread().getName()));
     }
 
     public static void main(String[] args) {

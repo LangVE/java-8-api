@@ -67,17 +67,24 @@ public class LearnToExternalIterator implements Measurable{
     private static Iterator<Integer> filterDivision(Iterator<Integer> integerIterator, int number) {
 
         while(integerIterator.hasNext()) {
-            if(!(integerIterator.next() % number == 0)) {
+
+            int n = integerIterator.next();
+
+            if((n % number == 0)) {
+                System.out.println( "Theard name(" + n + ") : " + Thread.currentThread().getName());
+
                 integerIterator.remove();
             }
         }
+
+
 
         return integerIterator;
     }
 
     @Override
     public void execute() {
-        List<Integer> integerList = init(10000000);
+        List<Integer> integerList = init(1000000);
 
         Iterator<Integer> integerIterator = integerList.iterator();
 
@@ -88,5 +95,6 @@ public class LearnToExternalIterator implements Measurable{
         //step3();
         StopWatch stopWatch = new StopWatch();
         stopWatch.measure(new LearnToExternalIterator());
+
     }
 }
