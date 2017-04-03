@@ -49,6 +49,7 @@ public class LearnToInternalIterator {
 
         print(integerIterator);
 
+        // error!
         integerIterator =  integerStream.skip(50)
                 .limit(10)
                 .iterator();
@@ -59,15 +60,16 @@ public class LearnToInternalIterator {
     public static void step3() {
         List<Integer> list = init();
 
-        list.stream().skip(50).limit(10).forEach(integer -> {System.out.println(integer);});
+        list.stream().skip(50).limit(10).forEach(integer -> System.out.println(integer));
     }
 
     public static void step4() {
         List<Integer> list = init();
 
-        list.stream().skip(50).limit(10).forEach(integer -> {System.out.println(integer);});
+        list.stream().skip(50).limit(10).forEach(integer -> System.out.println(integer));
 
-        list.stream().limit(10).forEach(integer -> {System.out.println(integer);});
+        // error?
+        list.stream().limit(10).forEach(integer -> System.out.println(integer));
     }
 
     public static void main(String[] args) {
