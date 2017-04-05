@@ -6,12 +6,10 @@ package example.java_programming_language.stream_api;
 public class Person {
     private String gender;
     private String age;
-    public static int loopCount = 0;
 
     public Person(String gender, String age){
         this.gender = gender;
         this.age = age;
-        this.count = 0;
     }
     public String getGender() {
         System.out.println("getGender : " + gender);
