@@ -25,6 +25,11 @@ public class LearnToLazy {
 
         list.stream().filter((p) -> p.getGender().equals("m"))
                 .filter((p) -> Integer.parseInt(p.getAge()) < 15)
-                .forEach((p) -> System.out.println(String.format("End name : %s", p.getName())));
+                //.forEach((p) -> System.out.println(String.format("End name : %s", p.getName())));
+                .forEach(LearnToLazy::print);
+    }
+
+    private static void print(Person p){
+        System.out.println(String.format("End name : %s, %s, %s", p.getName(), p.getAge(), p.getGender()));
     }
 }
