@@ -26,5 +26,7 @@ public class LearnToTemporalAdjusters {
         LocalDate firstDayOfcurrentMonth = LocalDate.of(date1.getYear(),date1.getMonth(), 1);
         LocalDate secondSaturday = firstDayOfcurrentMonth.with(TemporalAdjusters.nextOrSame(DayOfWeek.SATURDAY)).with(TemporalAdjusters.next(DayOfWeek.SATURDAY));
         System.out.println("Second Saturday on : " + secondSaturday);
+        LocalDate secondSaturday1 = firstDayOfcurrentMonth.with(TemporalAdjusters.next(DayOfWeek.SATURDAY)).with(TemporalAdjusters.next(DayOfWeek.SATURDAY));
+        System.out.println("Second Saturday1 on : " + secondSaturday1);
     }
 }

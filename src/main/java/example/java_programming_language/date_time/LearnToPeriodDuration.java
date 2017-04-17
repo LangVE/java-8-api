@@ -22,7 +22,7 @@ public class LearnToPeriodDuration {
         System.out.println("Current date: " + date1);
 
         //add 1 month to the current date
-        LocalDate date2 = date1.plus(1, ChronoUnit.MONTHS);
+        LocalDate date2 = date1.plus(1, ChronoUnit.MONTHS).plus(1, ChronoUnit.DAYS);
         System.out.println("Next month: " + date2);
 
         Period period = Period.between(date1, date2);
