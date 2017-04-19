@@ -5,10 +5,10 @@ package example.java_programming_language.lang_and_util;
  */
 public class LearnToUnsignedArithmeticSupport {
     public static void main(String[] args) {
-        Integer integer = Integer.parseInt("2147483648");
+        Integer integer = Integer.parseInt("2147483647");
         System.out.println("integer = " + integer);
 
-        Integer unsignedInteger = Integer.parseUnsignedInt("2147483648", 10);
+        Integer unsignedInteger = Integer.parseUnsignedInt("2147483648");
         System.out.println("unsignedInteger = " + unsignedInteger);
     }
 }
