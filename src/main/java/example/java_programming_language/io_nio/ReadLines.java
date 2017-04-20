@@ -30,10 +30,10 @@ public class ReadLines {
             BufferedReader br = Files.newBufferedReader(Paths.get(".\\src\\main\\java\\example\\java_programming_language\\io_nio\\ReadLines.java"));
             br.lines().map(String::toLowerCase).forEach(System.out::println);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
-            if(oldjavaBr != null){
+        } finally {
+            if (oldjavaBr != null) {
                 try {
                     oldjavaBr.close();
                 } catch (IOException e) {

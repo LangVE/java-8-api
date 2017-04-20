@@ -8,16 +8,16 @@ import java.nio.file.Files;
  */
 public class FindFilePaths {
 
-    public static void main(String[] args){
-        try{
+    public static void main(String[] args) {
+        try {
             System.out.println("#old java -----------------------------------------------");
 
             File dir = new File(".\\src\\main\\java\\example\\java_programming_language\\io_nio");
             File[] fileList = dir.listFiles();
 
-            for(int i = 0 ; i < fileList.length ; i++) {
+            for (int i = 0; i < fileList.length; i++) {
                 File file = fileList[i];
-                if(file.isFile()){
+                if (file.isFile()) {
                     System.out.println(file.getPath());
                 }
             }
@@ -29,9 +29,9 @@ public class FindFilePaths {
                     .filter(path -> path.endsWith("java"))
                     .forEach(System.out::println);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
         }
 
     }

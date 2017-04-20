@@ -15,7 +15,7 @@ public class LearnToPeriodDuration {
         testDuration();
     }
 
-    public static void testPeriod(){
+    public static void testPeriod() {
 
         //Get the current date
         LocalDate date1 = LocalDate.now();

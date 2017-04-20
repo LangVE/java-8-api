@@ -16,7 +16,7 @@ public class LearnToTypeAnnotations {
         String nnobj = null;
 
         nnobj.toString();
-        if(nonnullValue != null)
+        if (nonnullValue != null)
             nonnullValue.toString();
     }
 }

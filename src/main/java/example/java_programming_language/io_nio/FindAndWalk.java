@@ -29,9 +29,9 @@ public class FindAndWalk {
                     filter(path -> path.endsWith("java")).
                     forEach(System.out::println);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
         }
     }
 }

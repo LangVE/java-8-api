@@ -10,11 +10,11 @@ import java.util.Date;
  * Created by langve on 2017. 4. 17..
  */
 public class LearnToBackwardCompatibility {
-    public static void main(String args[]){
+    public static void main(String args[]) {
         testBackwardCompatability();
     }
 
-    public static void testBackwardCompatability(){
+    public static void testBackwardCompatability() {
         Date currentDate = new Date();
         Instant nowInstant = currentDate.toInstant();
         ZoneId currentZone = ZoneId.systemDefault();
