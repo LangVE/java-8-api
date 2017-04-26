@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.LongAccumulator;
  */
 public class LearnToLongAccumulator {
     public static void main(String[] args) {
-        LongAccumulator acc = new LongAccumulator((a, b) -> a+b, 1l);
+        LongAccumulator acc = new LongAccumulator((a, b) -> a+b, 1L);
         System.out.println("acc = " + acc);
 
         acc.accumulate(3);
