@@ -38,6 +38,15 @@ public class LearnToForkJoinPool {
         });
     }
 
+    public static void parallelByCommonPool() throws ExecutionException, InterruptedException {
+        ForkJoinPool myPool = ForkJoinPool.commonPool();
+        System.out.println("ForkJoinPool.getCommonPoolParallelism() : " + ForkJoinPool.getCommonPoolParallelism());
+
+        myPool.submit(() -> {
+            parallelByStream();
+        }).get();
+    }
+
     public static void parallelByCustomPool() throws ExecutionException, InterruptedException {
         ForkJoinPool myPool = new ForkJoinPool(5);
         System.out.println("ForkJoinPool.getCommonPoolParallelism() : " + ForkJoinPool.getCommonPoolParallelism());
@@ -50,10 +59,12 @@ public class LearnToForkJoinPool {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // compare result!!
         // step1
-//        parallelByExecutorService();
+        // parallelByExecutorService();
         // step2
-//        parallelByStream();
+        // parallelByStream();
         // step3
+        // parallelByCommonPool();
+        // step4
         parallelByCustomPool();
 
     }
